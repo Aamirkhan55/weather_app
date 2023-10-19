@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Image.asset('assets/1.png'), 
                    const Center(
                     child: Text(
-                      '21 C',
+                      '21°C',
                       style: TextStyle(
                         fontSize: 55,
                         color: Colors.white,
@@ -124,6 +124,76 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                    ),
                    const SizedBox(height: 30), 
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                        'assets/11.png',
+                         scale : 8,
+                        ),
+                      const SizedBox(width: 5),
+                      const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Sunrise',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),
+                          SizedBox(height: 3),
+                          Text(
+                            '5:34 am',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),  
+                        ],
+                      )  
+                        ],
+                      ),
+                     Row(
+                        children: [
+                          Image.asset(
+                        'assets/12.png',
+                         scale : 8,
+                        ),
+                      const SizedBox(width: 5),
+                      const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Sunset',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),
+                          SizedBox(height: 3),
+                          Text(
+                            '5:34 pm',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),  
+                        ],
+                      )  
+                        ],
+                      ),  
+                    ],
+                   ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                    child: Divider(
+                      color: Colors.grey,
+                      thickness: 2,
+                    ),
+                    )   
                   ],
                 ),
               ),  
