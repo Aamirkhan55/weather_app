@@ -72,25 +72,58 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(
                 width: MediaQuery.sizeOf(context).width,
                 height: MediaQuery.sizeOf(context).height,
-                child: const Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Aix-en-Provence',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300
                       ),
                       ),
-                    SizedBox(height: 8),
-                    Text(
+                    const SizedBox(height: 8),
+                    const Text(
                       'Good Morning',
                       style: TextStyle(
                         fontSize: 25,
                         color: Colors.white,
                         fontWeight: FontWeight.bold
                       ),
-                    ),  
+                    ),
+                    Image.asset('assets/1.png'), 
+                   const Center(
+                    child: Text(
+                      '21 C',
+                      style: TextStyle(
+                        fontSize: 55,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500
+                      ),
+                      ),
+                   ),
+                   const Center(
+                    child: Text(
+                      'THUNDERSTROM',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500
+                      ),
+                      ),
+                   ), 
+                   const SizedBox(height: 5),
+                   const Center(
+                    child: Text(
+                      'Friday 16 . 11.05am',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      ),
+                   ),
+                   const SizedBox(height: 30), 
                   ],
                 ),
               ),  
