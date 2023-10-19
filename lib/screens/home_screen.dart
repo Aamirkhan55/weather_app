@@ -81,7 +81,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.white,
                         fontWeight: FontWeight.w300
                       ),
-                      )
+                      ),
+                    SizedBox(height: 8),
+                    Text(
+                      'Good Morning',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),  
                   ],
                 ),
               ),  
