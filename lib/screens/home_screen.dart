@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      '📍 Aix-en-Provence',
+                      '📍 Peshawar',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300
