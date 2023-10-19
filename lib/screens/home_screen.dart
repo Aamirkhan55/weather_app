@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      'Aix-en-Provence',
+                      '📍 Aix-en-Provence',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w300
@@ -92,6 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     Image.asset('assets/1.png'), 
+                   const SizedBox(height: 8), 
                    const Center(
                     child: Text(
                       '21°C',
@@ -123,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       ),
                    ),
-                   const SizedBox(height: 30), 
+                   const SizedBox(height: 50), 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -193,7 +194,71 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.grey,
                       thickness: 2,
                     ),
-                    )   
+                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Image.asset(
+                        'assets/13.png',
+                         scale : 8,
+                        ),
+                      const SizedBox(width: 5),
+                      const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Temp Max',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),
+                          SizedBox(height: 3),
+                          Text(
+                            '12°C',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),  
+                        ],
+                      )  
+                        ],
+                      ),
+                     Row(
+                        children: [
+                          Image.asset(
+                        'assets/14.png',
+                         scale : 8,
+                        ),
+                      const SizedBox(width: 5),
+                      const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Temp Min',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),
+                          SizedBox(height: 3),
+                          Text(
+                            '8°C',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w300
+                            ),
+                            ),  
+                        ],
+                      )  
+                        ],
+                      ),  
+                    ],
+                   ),  
+
                   ],
                 ),
               ),  
